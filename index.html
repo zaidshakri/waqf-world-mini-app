@@ -25,15 +25,24 @@ html {
 }
 
 body {
+
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     background:
         radial-gradient(
-        circle at top right,
-        rgba(32,214,107,0.08),
-        transparent 35%),
+            circle at top right,
+            rgba(32,214,107,0.08),
+            transparent 35%
+        ),
         #07110c;
+
     color: #ffffff;
+
     line-height: 1.6;
 }
 
@@ -43,8 +52,11 @@ a {
 }
 
 .container {
+
     width: 92%;
+
     max-width: 1100px;
+
     margin: auto;
 }
 
@@ -56,7 +68,9 @@ a {
 header {
 
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
     padding: 14px 0;
@@ -67,23 +81,27 @@ header {
     backdrop-filter: blur(12px);
 
     border-bottom:
-        1px solid rgba(32,214,107,0.18);
+        1px solid
+        rgba(32,214,107,0.18);
 }
 
 .nav {
 
     display: flex;
 
-    justify-content: space-between;
+    justify-content:
+        space-between;
 
-    align-items: center;
+    align-items:
+        center;
 }
 
 .logo {
 
     display: flex;
 
-    align-items: center;
+    align-items:
+        center;
 
     gap: 12px;
 
@@ -95,6 +113,7 @@ header {
 .logo img {
 
     width: 52px;
+
     height: 52px;
 
     object-fit: contain;
@@ -103,15 +122,17 @@ header {
 
     filter:
         drop-shadow(
-        0 0 10px
-        rgba(255,193,7,0.35));
+            0 0 10px
+            rgba(255,193,7,0.35)
+        );
 }
 
 .logo-text {
 
     display: flex;
 
-    flex-direction: column;
+    flex-direction:
+        column;
 
     line-height: 1.1;
 }
@@ -167,16 +188,19 @@ header {
     position: absolute;
 
     width: 450px;
+
     height: 450px;
 
     right: -180px;
+
     top: 20px;
 
     background:
         radial-gradient(
-        circle,
-        rgba(32,214,107,0.15),
-        transparent 65%);
+            circle,
+            rgba(32,214,107,0.15),
+            transparent 65%
+        );
 
     pointer-events: none;
 }
@@ -185,7 +209,8 @@ header {
 
     display: inline-block;
 
-    padding: 8px 17px;
+    padding:
+        8px 17px;
 
     border-radius: 30px;
 
@@ -213,7 +238,8 @@ header {
 
     font-size: 52px;
 
-    margin: 0 0 15px;
+    margin:
+        0 0 15px;
 
     line-height: 1.1;
 }
@@ -260,7 +286,8 @@ header {
 
     display: inline-block;
 
-    padding: 14px 24px;
+    padding:
+        14px 24px;
 
     border-radius: 12px;
 
@@ -291,7 +318,8 @@ header {
 
 .button.secondary {
 
-    background: transparent;
+    background:
+        transparent;
 
     border:
         1px solid
@@ -304,13 +332,27 @@ header {
 
     background:
         linear-gradient(
-        135deg,
-        #ffd75a,
-        #e7a91d);
+            135deg,
+            #ffd75a,
+            #e7a91d
+        );
 
     color: #1b1300;
 
-    border-color: #ffd75a;
+    border-color:
+        #ffd75a;
+}
+
+.button.copy {
+
+    background:
+        rgba(32,214,107,0.12);
+
+    color: #35e879;
+
+    border:
+        1px solid
+        rgba(32,214,107,0.35);
 }
 
 
@@ -320,7 +362,8 @@ header {
 
 section {
 
-    padding: 40px 0;
+    padding:
+        40px 0;
 }
 
 .section-title {
@@ -365,9 +408,10 @@ section {
 
     background:
         linear-gradient(
-        145deg,
-        #0d1912,
-        #09130e);
+            145deg,
+            #0d1912,
+            #09130e
+        );
 
     border:
         1px solid
@@ -411,6 +455,7 @@ section {
 .card-logo {
 
     width: 70px;
+
     height: 70px;
 
     object-fit: contain;
@@ -421,8 +466,9 @@ section {
 
     filter:
         drop-shadow(
-        0 0 12px
-        rgba(255,193,7,0.28));
+            0 0 12px
+            rgba(255,193,7,0.28)
+        );
 }
 
 
@@ -436,9 +482,10 @@ section {
 
     background:
         linear-gradient(
-        135deg,
-        #132d1b,
-        #0b1710);
+            135deg,
+            #132d1b,
+            #0b1710
+        );
 
     border:
         1px solid
@@ -446,7 +493,8 @@ section {
 
     border-radius: 22px;
 
-    padding: 40px 20px;
+    padding:
+        40px 20px;
 
     box-shadow:
         0 0 35px
@@ -456,6 +504,7 @@ section {
 .token-logo {
 
     width: 130px;
+
     height: 130px;
 
     object-fit: contain;
@@ -464,8 +513,9 @@ section {
 
     filter:
         drop-shadow(
-        0 0 22px
-        rgba(255,193,7,0.35));
+            0 0 22px
+            rgba(255,193,7,0.35)
+        );
 }
 
 .token-symbol {
@@ -489,87 +539,91 @@ section {
 
 .contract-box {
 
-    margin-top: 30px;
+    margin:
+        30px auto 0;
 
-    padding: 22px;
+    max-width: 720px;
 
-    border-radius: 18px;
+    text-align: left;
 
     background:
-        rgba(4,15,9,0.75);
+        rgba(0,0,0,0.20);
 
     border:
         1px solid
-        rgba(255,215,90,0.25);
+        rgba(255,255,255,0.08);
 
-    text-align: center;
+    border-radius: 18px;
+
+    padding: 22px;
+}
+
+.contract-row {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    gap: 15px;
+
+    padding:
+        14px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,0.08);
+}
+
+.contract-row:last-child {
+
+    border-bottom: none;
 }
 
 .contract-label {
 
-    color: #ffd75a;
+    color: #9daaa2;
 
-    font-size: 13px;
+    font-size: 14px;
+
+    min-width: 100px;
+}
+
+.contract-value {
+
+    color: #ffffff;
 
     font-weight: bold;
 
-    letter-spacing: 1px;
-
-    margin-bottom: 10px;
-}
-
-.network {
-
-    display: inline-block;
-
-    padding: 6px 12px;
-
-    border-radius: 20px;
-
-    background:
-        rgba(32,214,107,0.10);
-
-    border:
-        1px solid
-        rgba(32,214,107,0.30);
-
-    color: #35e879;
-
-    font-size: 13px;
-
-    margin-bottom: 15px;
+    text-align: right;
 }
 
 .contract-address {
 
-    display: block;
-
-    width: 100%;
-
-    padding: 14px;
-
-    border-radius: 12px;
-
-    background: #06100a;
-
-    border:
-        1px solid
-        rgba(255,255,255,0.10);
-
-    color: #ffffff;
-
     font-family:
-        "Courier New",
         monospace;
 
     font-size: 13px;
 
-    word-break: break-all;
+    color: #ffd75a;
 
-    margin-bottom: 15px;
+    background:
+        rgba(0,0,0,0.28);
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    word-break:
+        break-all;
+
+    margin-top: 8px;
 }
 
-.contract-buttons {
+.contract-actions {
 
     display: flex;
 
@@ -578,6 +632,126 @@ section {
     gap: 10px;
 
     flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.copy-message {
+
+    text-align: center;
+
+    color: #35e879;
+
+    font-size: 13px;
+
+    min-height: 20px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   TOKENOMICS
+========================= */
+
+.tokenomics-box {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.tokenomics-card {
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0d1912,
+            #09130e
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
+
+    transition: 0.25s;
+}
+
+.tokenomics-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(255,215,90,0.35);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.25);
+}
+
+.tokenomics-icon {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.tokenomics-card h3 {
+
+    margin:
+        0 0 8px;
+
+    color: #ffffff;
+}
+
+.tokenomics-value {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #35e879;
+
+    margin-bottom: 5px;
+}
+
+.tokenomics-description {
+
+    color: #9daaa2;
+
+    font-size: 14px;
+}
+
+.tokenomics-note {
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,193,7,0.06);
+
+    border:
+        1px solid
+        rgba(255,193,7,0.18);
+
+    color: #bfc7c1;
+
+    font-size: 13px;
+
+    text-align: center;
 }
 
 
@@ -598,9 +772,10 @@ section {
 
     background:
         linear-gradient(
-        135deg,
-        #10291a,
-        #09150e);
+            135deg,
+            #10291a,
+            #09150e
+        );
 
     border:
         1px solid
@@ -618,14 +793,16 @@ section {
 .staking-logo {
 
     width: 160px;
+
     height: 160px;
 
     object-fit: contain;
 
     filter:
         drop-shadow(
-        0 0 22px
-        rgba(255,193,7,0.40));
+            0 0 22px
+            rgba(255,193,7,0.40)
+        );
 }
 
 .staking-content h2 {
@@ -742,9 +919,10 @@ section {
 
     background:
         linear-gradient(
-        135deg,
-        #10351e,
-        #0b1c12);
+            135deg,
+            #10351e,
+            #0b1c12
+        );
 
     border:
         1px solid
@@ -769,7 +947,8 @@ footer {
 
     text-align: center;
 
-    padding: 30px 20px;
+    padding:
+        30px 20px;
 
     color: #7f8c84;
 
@@ -783,6 +962,7 @@ footer {
 .footer-logo {
 
     width: 55px;
+
     height: 55px;
 
     object-fit: contain;
@@ -793,8 +973,9 @@ footer {
 
     filter:
         drop-shadow(
-        0 0 10px
-        rgba(255,193,7,0.30));
+            0 0 10px
+            rgba(255,193,7,0.30)
+        );
 }
 
 
@@ -802,7 +983,7 @@ footer {
    MOBILE
 ========================= */
 
-@media (max-width: 700px) {
+@media (max-width:700px) {
 
     .hero {
 
@@ -842,10 +1023,16 @@ footer {
         margin: auto;
 
         width: 140px;
+
         height: 140px;
     }
 
     .pool-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .tokenomics-box {
 
         grid-template-columns: 1fr;
     }
@@ -862,11 +1049,6 @@ footer {
         flex-direction: column;
     }
 
-    .contract-buttons {
-
-        flex-direction: column;
-    }
-
     .header-label {
 
         display: none;
@@ -875,6 +1057,7 @@ footer {
     .logo img {
 
         width: 44px;
+
         height: 44px;
     }
 
@@ -883,9 +1066,18 @@ footer {
         font-size: 20px;
     }
 
-    .contract-address {
+    .contract-row {
 
-        font-size: 11px;
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+    }
+
+    .contract-value {
+
+        text-align: left;
     }
 
 }
@@ -922,9 +1114,10 @@ alt="WAQF Coin Logo">
 
 </div>
 
+
 <div class="header-label">
 
-WEB3 ECOSYSTEM
+WORLD CHAIN
 
 </div>
 
@@ -948,11 +1141,13 @@ WEB3 ECOSYSTEM
 
 </div>
 
+
 <h1>
 
 Welcome to <span>WAQF</span>
 
 </h1>
+
 
 <p>
 
@@ -964,6 +1159,7 @@ and real-world participation.
 
 
 <div class="hero-buttons">
+
 
 <a
 href="#staking"
@@ -978,11 +1174,12 @@ class="button gold">
 href="https://waqf.onpay.my"
 class="button secondary"
 target="_blank"
-rel="noopener noreferrer">
+rel="noopener">
 
 🛍️ Marketplace
 
 </a>
+
 
 </div>
 
@@ -1028,9 +1225,11 @@ src="waqf-logo.png.PNG"
 class="card-logo"
 alt="WAQF Coin">
 
+
 <h3>
 🪙 WAQF Token
 </h3>
+
 
 <p>
 
@@ -1040,6 +1239,7 @@ across the WAQF ecosystem.
 
 </p>
 
+
 <a
 href="#token"
 class="button secondary">
@@ -1048,21 +1248,33 @@ Explore WAQF
 
 </a>
 
+
+<a
+href="#tokenomics"
+class="button gold"
+style="margin-top:10px;">
+
+📊 View Tokenomics
+
+</a>
+
 </div>
+
 
 
 <!-- STAKING -->
 
 <div class="card">
 
-<img
-src="waqf-logo.png.PNG"
-class="card-logo"
-alt="WAQF Coin">
+<div class="card-icon">
+🔒
+</div>
+
 
 <h3>
-🔒 WAQF Staking
+WAQF Staking
 </h3>
+
 
 <p>
 
@@ -1072,6 +1284,7 @@ staking opportunities
 and rewards.
 
 </p>
+
 
 <a
 href="#staking"
@@ -1084,6 +1297,7 @@ class="button">
 </div>
 
 
+
 <!-- MARKETPLACE -->
 
 <div class="card">
@@ -1092,9 +1306,11 @@ class="button">
 🛍️
 </div>
 
+
 <h3>
 WAQF Marketplace
 </h3>
+
 
 <p>
 
@@ -1104,17 +1320,19 @@ marketplace.
 
 </p>
 
+
 <a
 href="https://waqf.onpay.my"
 class="button"
 target="_blank"
-rel="noopener noreferrer">
+rel="noopener">
 
 Open Marketplace
 
 </a>
 
 </div>
+
 
 
 <!-- COMMUNITY -->
@@ -1125,9 +1343,11 @@ Open Marketplace
 📢
 </div>
 
+
 <h3>
 Community
 </h3>
+
 
 <p>
 
@@ -1136,6 +1356,7 @@ for updates, announcements
 and ecosystem developments.
 
 </p>
+
 
 <a
 href="#community"
@@ -1164,11 +1385,13 @@ Join WAQF
 
 <div class="container">
 
+
 <div class="section-title">
 
 <h2>
 🔒 WAQF Staking
 </h2>
+
 
 <p>
 
@@ -1178,6 +1401,7 @@ in the WAQF ecosystem.
 </p>
 
 </div>
+
 
 
 <div class="staking-box">
@@ -1193,18 +1417,21 @@ alt="WAQF Coin">
 </div>
 
 
+
 <div class="staking-content">
 
 <h2>
 🚀 Start Staking WAQF
 </h2>
 
+
 <p>
 
 Staking is available through
-the WAQF staking platform.
+Ani Wallet.
 
 </p>
+
 
 <p>
 
@@ -1221,7 +1448,7 @@ the available staking pool.
 href="https://world.org/ecosystem/app_4593f73390a9843503ec096086b43612"
 class="button gold"
 target="_blank"
-rel="noopener noreferrer">
+rel="noopener">
 
 🚀 Open WAQF Staking
 
@@ -1230,11 +1457,13 @@ rel="noopener noreferrer">
 </div>
 
 
+
 <h3 style="color:#35e879;">
 
 Current WAQF Staking Options
 
 </h3>
+
 
 
 <div class="pool-grid">
@@ -1299,19 +1528,36 @@ Flexible Pool
 
 <div class="container">
 
+
 <div class="section-title">
 
 <h2>
-🪙 WAQF Token
+
+<img
+src="waqf-logo.png.PNG"
+style="
+width:42px;
+height:42px;
+object-fit:contain;
+vertical-align:middle;
+margin-right:8px;
+filter:drop-shadow(0 0 8px rgba(255,193,7,0.35));
+"
+alt="WAQF Coin">
+
+WAQF Token
+
 </h2>
+
 
 <p>
 
-Information about the WAQF digital asset.
+Official WAQF digital asset information.
 
 </p>
 
 </div>
+
 
 
 <div class="token-box">
@@ -1337,50 +1583,124 @@ WAQF Ecosystem Token
 </div>
 
 
-<br>
+<div style="
+margin-top:15px;
+color:#35e879;
+font-size:13px;
+font-weight:bold;
+letter-spacing:1px;
+">
+
+WORLD CHAIN
+
+</div>
 
 
-<p>
 
-WAQF is designed to support
-participation within the WAQF ecosystem
-including staking, community activities
-and marketplace initiatives.
+<p style="
+max-width:700px;
+margin:25px auto;
+">
+
+WAQF is a community-driven digital token
+designed to support participation within
+the WAQF ecosystem including staking,
+community activities and marketplace
+initiatives.
 
 </p>
 
 
-<!-- CONTRACT -->
+
+<!-- CONTRACT INFORMATION -->
 
 <div class="contract-box">
 
+
+<div class="contract-row">
+
 <div class="contract-label">
+Token
+</div>
 
-VERIFIED TOKEN INFORMATION
+<div class="contract-value">
+WAQF
+</div>
 
 </div>
 
 
-<div class="network">
 
-🌐 World Chain
+<div class="contract-row">
+
+<div class="contract-label">
+Network
+</div>
+
+<div class="contract-value"
+style="color:#35e879;">
+
+World Chain
+
+</div>
 
 </div>
 
 
-<div
-class="contract-address"
-id="contractAddress">
+
+<div class="contract-row">
+
+<div class="contract-label">
+Chain ID
+</div>
+
+<div class="contract-value">
+
+480
+
+</div>
+
+</div>
+
+
+
+<div>
+
+<div class="contract-label"
+style="margin-top:15px;">
+
+Contract Address
+
+</div>
+
+
+<div class="contract-address">
 
 0x0983E2b886A0ae277243f099d62B7688733646aF
 
 </div>
 
+</div>
 
-<div class="contract-buttons">
+
+
+<div class="contract-actions">
+
+
+<a
+href="https://worldscan.org/address/0x0983E2b886A0ae277243f099d62B7688733646aF"
+class="button gold"
+target="_blank"
+rel="noopener">
+
+🔎 View Contract
+
+</a>
+
 
 <button
-class="button gold"
+type="button"
+class="button copy"
 onclick="copyContract()">
 
 📋 Copy Contract
@@ -1388,34 +1708,291 @@ onclick="copyContract()">
 </button>
 
 
-<a
-href="https://worldscan.org/address/0x0983E2b886A0ae277243f099d62B7688733646aF"
-class="button secondary"
-target="_blank"
-rel="noopener noreferrer">
+</div>
 
-🔎 View Contract
 
-</a>
+<div
+id="copyMessage"
+class="copy-message">
+</div>
+
 
 </div>
 
-<p
-id="copyMessage"
-style="
-color:#35e879;
-font-size:13px;
-margin-top:12px;
-display:none;">
 
-Contract address copied!
+<p style="
+color:#7f8c84;
+font-size:12px;
+margin-top:20px;
+">
+
+Always verify the contract address
+before interacting with WAQF.
+
+</p>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     TOKENOMICS
+========================= -->
+
+<section id="tokenomics">
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+📊 WAQF Tokenomics
+</h2>
+
+
+<p>
+
+Understanding the WAQF token ecosystem.
 
 </p>
 
 </div>
 
 
+
+<div class="tokenomics-box">
+
+
+<!-- SUPPLY -->
+
+<div class="tokenomics-card">
+
+<div class="tokenomics-icon">
+🪙
 </div>
+
+
+<h3>
+Total Supply
+</h3>
+
+
+<div class="tokenomics-value">
+On-Chain
+</div>
+
+
+<div class="tokenomics-description">
+
+Official supply information can be
+verified directly on the blockchain.
+
+</div>
+
+</div>
+
+
+
+<!-- NETWORK -->
+
+<div class="tokenomics-card">
+
+<div class="tokenomics-icon">
+🌐
+</div>
+
+
+<h3>
+Network
+</h3>
+
+
+<div class="tokenomics-value">
+World Chain
+</div>
+
+
+<div class="tokenomics-description">
+
+WAQF is deployed on the
+World Chain network.
+
+</div>
+
+</div>
+
+
+
+<!-- CHAIN ID -->
+
+<div class="tokenomics-card">
+
+<div class="tokenomics-icon">
+🔗
+</div>
+
+
+<h3>
+Chain ID
+</h3>
+
+
+<div class="tokenomics-value">
+480
+</div>
+
+
+<div class="tokenomics-description">
+
+World Chain Mainnet
+network identifier.
+
+</div>
+
+</div>
+
+
+
+<!-- STAKING -->
+
+<div class="tokenomics-card">
+
+<div class="tokenomics-icon">
+🔒
+</div>
+
+
+<h3>
+Staking
+</h3>
+
+
+<div class="tokenomics-value">
+Available
+</div>
+
+
+<div class="tokenomics-description">
+
+WAQF staking opportunities
+are available through the
+WAQF staking platform.
+
+</div>
+
+</div>
+
+
+
+<!-- UTILITY -->
+
+<div class="tokenomics-card">
+
+<div class="tokenomics-icon">
+🌱
+</div>
+
+
+<h3>
+Ecosystem Utility
+</h3>
+
+
+<div class="tokenomics-value">
+WAQF
+</div>
+
+
+<div class="tokenomics-description">
+
+Designed to support staking,
+community activities and
+marketplace initiatives.
+
+</div>
+
+</div>
+
+
+
+<!-- MARKETPLACE -->
+
+<div class="tokenomics-card">
+
+<div class="tokenomics-icon">
+🛍️
+</div>
+
+
+<h3>
+Marketplace
+</h3>
+
+
+<div class="tokenomics-value">
+Active
+</div>
+
+
+<div class="tokenomics-description">
+
+Products and services are
+available through the
+WAQF marketplace.
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="tokenomics-note">
+
+⚠️ Total supply, liquidity and allocation
+figures will only be published after
+on-chain verification.
+
+<br><br>
+
+Always verify the official WAQF contract
+before interacting with the token.
+
+</div>
+
+
+
+<div class="hero-buttons">
+
+<a
+href="#token"
+class="button gold">
+
+🔗 View Contract
+
+</a>
+
+
+<a
+href="https://worldscan.org/address/0x0983E2b886A0ae277243f099d62B7688733646aF"
+class="button secondary"
+target="_blank"
+rel="noopener">
+
+🔎 WorldScan
+
+</a>
+
+</div>
+
 
 </div>
 
@@ -1431,11 +2008,13 @@ Contract address copied!
 
 <div class="container">
 
+
 <div class="section-title">
 
 <h2>
 🗺️ WAQF Roadmap
 </h2>
+
 
 <p>
 
@@ -1444,6 +2023,7 @@ Building the WAQF ecosystem step by step.
 </p>
 
 </div>
+
 
 
 <div class="roadmap">
@@ -1455,6 +2035,7 @@ Building the WAQF ecosystem step by step.
 PHASE 1 — FOUNDATION
 </span>
 
+
 <ul>
 
 <li>WAQF Token</li>
@@ -1465,11 +2046,10 @@ PHASE 1 — FOUNDATION
 
 <li>Staking Pool</li>
 
-<li>Contract Published</li>
-
 </ul>
 
 </div>
+
 
 
 <div class="phase">
@@ -1477,6 +2057,7 @@ PHASE 1 — FOUNDATION
 <span>
 PHASE 2 — GROWTH
 </span>
+
 
 <ul>
 
@@ -1493,11 +2074,13 @@ PHASE 2 — GROWTH
 </div>
 
 
+
 <div class="phase">
 
 <span>
 PHASE 3 — ECOSYSTEM
 </span>
+
 
 <ul>
 
@@ -1530,11 +2113,14 @@ PHASE 3 — ECOSYSTEM
 
 <div class="container">
 
+
 <div class="cta">
+
 
 <h2>
 📢 Join the WAQF Community
 </h2>
+
 
 <p>
 
@@ -1544,11 +2130,13 @@ and developments.
 
 </p>
 
+
 <p style="color:#7f8c84;">
 
 Community links will be added here.
 
 </p>
+
 
 </div>
 
@@ -1566,11 +2154,14 @@ Community links will be added here.
 
 <div class="container">
 
+
 <div class="cta">
+
 
 <h2>
 🚀 Start Your WAQF Journey
 </h2>
+
 
 <p>
 
@@ -1579,6 +2170,7 @@ visit the marketplace or
 start staking WAQF.
 
 </p>
+
 
 
 <div class="hero-buttons">
@@ -1597,7 +2189,7 @@ class="button gold">
 href="https://waqf.onpay.my"
 class="button secondary"
 target="_blank"
-rel="noopener noreferrer">
+rel="noopener">
 
 🛍️ Visit Marketplace
 
@@ -1620,26 +2212,35 @@ rel="noopener noreferrer">
 
 <footer>
 
+
 <img
 src="waqf-logo.png.PNG"
 class="footer-logo"
 alt="WAQF Coin">
 
+
 <strong style="color:white;">
 WAQF
 </strong>
 
+
 <br>
+
 
 © 2026 WAQF. All rights reserved.
 
+
 <br>
+
 
 <span style="font-size:12px;">
 
 WAQF Web3 Ecosystem
+<br>
+World Chain • Chain ID 480
 
 </span>
+
 
 </footer>
 
@@ -1653,32 +2254,82 @@ WAQF Web3 Ecosystem
 
 function copyContract() {
 
-    const address =
+    const contract =
         "0x0983E2b886A0ae277243f099d62B7688733646aF";
 
-    navigator.clipboard.writeText(address)
-    .then(function() {
-
-        const message =
-            document.getElementById("copyMessage");
-
-        message.style.display = "block";
-
-        setTimeout(function() {
-
-            message.style.display = "none";
-
-        }, 2500);
-
-    })
-    .catch(function() {
-
-        alert(
-            "Contract Address:\n\n" +
-            address
+    const message =
+        document.getElementById(
+            "copyMessage"
         );
 
-    });
+
+    if (
+        navigator.clipboard &&
+        window.isSecureContext
+    ) {
+
+        navigator.clipboard
+            .writeText(contract)
+            .then(function() {
+
+                message.innerHTML =
+                    "✓ Contract address copied!";
+
+            })
+            .catch(function() {
+
+                fallbackCopy(contract);
+
+            });
+
+    } else {
+
+        fallbackCopy(contract);
+
+    }
+
+}
+
+
+function fallbackCopy(text) {
+
+    const textarea =
+        document.createElement("textarea");
+
+    textarea.value = text;
+
+    textarea.style.position =
+        "fixed";
+
+    textarea.style.opacity = "0";
+
+    document.body.appendChild(textarea);
+
+    textarea.focus();
+
+    textarea.select();
+
+    try {
+
+        document.execCommand("copy");
+
+        document.getElementById(
+            "copyMessage"
+        ).innerHTML =
+            "✓ Contract address copied!";
+
+    }
+
+    catch (err) {
+
+        document.getElementById(
+            "copyMessage"
+        ).innerHTML =
+            "Please copy the address manually.";
+
+    }
+
+    document.body.removeChild(textarea);
 
 }
 
