@@ -25,13 +25,8 @@ html {
 }
 
 body {
-
     margin: 0;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
     background:
         radial-gradient(
@@ -52,11 +47,8 @@ a {
 }
 
 .container {
-
     width: 92%;
-
     max-width: 1100px;
-
     margin: auto;
 }
 
@@ -212,7 +204,8 @@ header {
     padding:
         8px 17px;
 
-    border-radius: 30px;
+    border-radius:
+        30px;
 
     background:
         rgba(32,214,107,0.10);
@@ -275,7 +268,8 @@ header {
 
     display: flex;
 
-    justify-content: center;
+    justify-content:
+        center;
 
     gap: 12px;
 
@@ -289,7 +283,8 @@ header {
     padding:
         14px 24px;
 
-    border-radius: 12px;
+    border-radius:
+        12px;
 
     background: #20d66b;
 
@@ -343,18 +338,6 @@ header {
         #ffd75a;
 }
 
-.button.copy {
-
-    background:
-        rgba(32,214,107,0.12);
-
-    color: #35e879;
-
-    border:
-        1px solid
-        rgba(32,214,107,0.35);
-}
-
 
 /* =========================
    SECTION
@@ -404,7 +387,8 @@ section {
 
     padding: 25px;
 
-    border-radius: 18px;
+    border-radius:
+        18px;
 
     background:
         linear-gradient(
@@ -473,6 +457,112 @@ section {
 
 
 /* =========================
+   LIVE MARKET
+========================= */
+
+.live-market {
+
+    margin-top: 25px;
+}
+
+.live-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.live-card {
+
+    padding: 22px;
+
+    border-radius:
+        18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0d1d13,
+            #09130e
+        );
+
+    border:
+        1px solid
+        rgba(32,214,107,0.16);
+
+    text-align: center;
+
+    transition: 0.25s;
+}
+
+.live-card:hover {
+
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(32,214,107,0.4);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,0.22);
+}
+
+.live-icon {
+
+    font-size: 25px;
+
+    margin-bottom: 5px;
+}
+
+.live-value {
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    color: #35e879;
+
+    word-break: break-word;
+}
+
+.live-label {
+
+    color: #8f9c94;
+
+    font-size: 13px;
+
+    margin-top: 4px;
+}
+
+.live-status {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #7f8c84;
+
+    font-size: 12px;
+}
+
+.live-status span {
+
+    color: #35e879;
+}
+
+.market-link {
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
    TOKEN
 ========================= */
 
@@ -491,7 +581,8 @@ section {
         1px solid
         rgba(32,214,107,0.28);
 
-    border-radius: 22px;
+    border-radius:
+        22px;
 
     padding:
         40px 20px;
@@ -534,228 +625,6 @@ section {
 
 
 /* =========================
-   CONTRACT
-========================= */
-
-.contract-box {
-
-    margin:
-        30px auto 0;
-
-    max-width: 720px;
-
-    text-align: left;
-
-    background:
-        rgba(0,0,0,0.20);
-
-    border:
-        1px solid
-        rgba(255,255,255,0.08);
-
-    border-radius: 18px;
-
-    padding: 22px;
-}
-
-.contract-row {
-
-    display: flex;
-
-    justify-content:
-        space-between;
-
-    align-items:
-        center;
-
-    gap: 15px;
-
-    padding:
-        14px 0;
-
-    border-bottom:
-        1px solid
-        rgba(255,255,255,0.08);
-}
-
-.contract-row:last-child {
-
-    border-bottom: none;
-}
-
-.contract-label {
-
-    color: #9daaa2;
-
-    font-size: 14px;
-
-    min-width: 100px;
-}
-
-.contract-value {
-
-    color: #ffffff;
-
-    font-weight: bold;
-
-    text-align: right;
-}
-
-.contract-address {
-
-    font-family:
-        monospace;
-
-    font-size: 13px;
-
-    color: #ffd75a;
-
-    background:
-        rgba(0,0,0,0.28);
-
-    padding: 13px;
-
-    border-radius: 10px;
-
-    word-break:
-        break-all;
-
-    margin-top: 8px;
-}
-
-.contract-actions {
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 10px;
-
-    flex-wrap: wrap;
-
-    margin-top: 20px;
-}
-
-.copy-message {
-
-    text-align: center;
-
-    color: #35e879;
-
-    font-size: 13px;
-
-    min-height: 20px;
-
-    margin-top: 10px;
-}
-
-
-/* =========================
-   TOKENOMICS
-========================= */
-
-.tokenomics-box {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap: 18px;
-
-    margin-top: 25px;
-}
-
-.tokenomics-card {
-
-    padding: 25px;
-
-    border-radius: 18px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #0d1912,
-            #09130e
-        );
-
-    border:
-        1px solid
-        rgba(255,255,255,0.08);
-
-    transition: 0.25s;
-}
-
-.tokenomics-card:hover {
-
-    transform:
-        translateY(-4px);
-
-    border-color:
-        rgba(255,215,90,0.35);
-
-    box-shadow:
-        0 10px 30px
-        rgba(0,0,0,0.25);
-}
-
-.tokenomics-icon {
-
-    font-size: 30px;
-
-    margin-bottom: 10px;
-}
-
-.tokenomics-card h3 {
-
-    margin:
-        0 0 8px;
-
-    color: #ffffff;
-}
-
-.tokenomics-value {
-
-    font-size: 28px;
-
-    font-weight: bold;
-
-    color: #35e879;
-
-    margin-bottom: 5px;
-}
-
-.tokenomics-description {
-
-    color: #9daaa2;
-
-    font-size: 14px;
-}
-
-.tokenomics-note {
-
-    margin-top: 25px;
-
-    padding: 18px;
-
-    border-radius: 15px;
-
-    background:
-        rgba(255,193,7,0.06);
-
-    border:
-        1px solid
-        rgba(255,193,7,0.18);
-
-    color: #bfc7c1;
-
-    font-size: 13px;
-
-    text-align: center;
-}
-
-
-/* =========================
    STAKING
 ========================= */
 
@@ -781,7 +650,8 @@ section {
         1px solid
         rgba(32,214,107,0.30);
 
-    border-radius: 22px;
+    border-radius:
+        22px;
 
     padding: 30px;
 
@@ -835,9 +705,11 @@ section {
 
     padding: 20px;
 
-    border-radius: 15px;
+    border-radius:
+        15px;
 
-    background: #0b1911;
+    background:
+        #0b1911;
 
     border:
         1px solid
@@ -879,9 +751,11 @@ section {
 
     padding: 25px;
 
-    border-radius: 18px;
+    border-radius:
+        18px;
 
-    background: #0d1912;
+    background:
+        #0d1912;
 
     border:
         1px solid
@@ -911,11 +785,14 @@ section {
 
     text-align: center;
 
-    margin: 35px 0;
+    margin:
+        35px 0;
 
-    padding: 45px 20px;
+    padding:
+        45px 20px;
 
-    border-radius: 22px;
+    border-radius:
+        22px;
 
     background:
         linear-gradient(
@@ -967,15 +844,10 @@ footer {
 
     object-fit: contain;
 
-    vertical-align: middle;
+    vertical-align:
+        middle;
 
     margin-right: 8px;
-
-    filter:
-        drop-shadow(
-            0 0 10px
-            rgba(255,193,7,0.30)
-        );
 }
 
 
@@ -983,7 +855,7 @@ footer {
    MOBILE
 ========================= */
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
 
     .hero {
 
@@ -1003,17 +875,20 @@ footer {
 
     .grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
     }
 
     .roadmap {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
     }
 
     .staking-box {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
 
         text-align: center;
     }
@@ -1029,12 +904,14 @@ footer {
 
     .pool-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr;
     }
 
-    .tokenomics-box {
+    .live-grid {
 
-        grid-template-columns: 1fr;
+        grid-template-columns:
+            1fr 1fr;
     }
 
     .button {
@@ -1046,7 +923,8 @@ footer {
 
     .hero-buttons {
 
-        flex-direction: column;
+        flex-direction:
+            column;
     }
 
     .header-label {
@@ -1066,18 +944,15 @@ footer {
         font-size: 20px;
     }
 
-    .contract-row {
+}
 
-        align-items:
-            flex-start;
 
-        flex-direction:
-            column;
-    }
+@media (max-width:450px) {
 
-    .contract-value {
+    .live-grid {
 
-        text-align: left;
+        grid-template-columns:
+            1fr;
     }
 
 }
@@ -1117,7 +992,7 @@ alt="WAQF Coin Logo">
 
 <div class="header-label">
 
-WORLD CHAIN
+WEB3 ECOSYSTEM
 
 </div>
 
@@ -1173,12 +1048,241 @@ class="button gold">
 <a
 href="https://waqf.onpay.my"
 class="button secondary"
-target="_blank"
-rel="noopener">
+target="_blank">
 
 🛍️ Marketplace
 
 </a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     LIVE MARKET
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+📊 WAQF Live Market
+
+</h2>
+
+<p>
+
+Live market information from the
+WAQF/WLD liquidity pool.
+
+</p>
+
+</div>
+
+
+<div class="live-market">
+
+
+<div class="live-grid">
+
+
+<!-- PRICE -->
+
+<div class="live-card">
+
+<div class="live-icon">
+
+🪙
+
+</div>
+
+<div
+class="live-value"
+id="waqf-price">
+
+Loading...
+
+</div>
+
+<div class="live-label">
+
+WAQF Price
+
+</div>
+
+</div>
+
+
+<!-- MARKET CAP -->
+
+<div class="live-card">
+
+<div class="live-icon">
+
+💰
+
+</div>
+
+<div
+class="live-value"
+id="waqf-mcap">
+
+Loading...
+
+</div>
+
+<div class="live-label">
+
+Market Cap / FDV
+
+</div>
+
+</div>
+
+
+<!-- LIQUIDITY -->
+
+<div class="live-card">
+
+<div class="live-icon">
+
+💧
+
+</div>
+
+<div
+class="live-value"
+id="waqf-liquidity">
+
+Loading...
+
+</div>
+
+<div class="live-label">
+
+Liquidity
+
+</div>
+
+</div>
+
+
+<!-- VOLUME -->
+
+<div class="live-card">
+
+<div class="live-icon">
+
+📊
+
+</div>
+
+<div
+class="live-value"
+id="waqf-volume">
+
+Loading...
+
+</div>
+
+<div class="live-label">
+
+24H Volume
+
+</div>
+
+</div>
+
+
+<!-- TRANSACTIONS -->
+
+<div class="live-card">
+
+<div class="live-icon">
+
+🔄
+
+</div>
+
+<div
+class="live-value"
+id="waqf-txns">
+
+Loading...
+
+</div>
+
+<div class="live-label">
+
+24H Transactions
+
+</div>
+
+</div>
+
+
+<!-- CHANGE -->
+
+<div class="live-card">
+
+<div class="live-icon">
+
+📈
+
+</div>
+
+<div
+class="live-value"
+id="waqf-change">
+
+Loading...
+
+</div>
+
+<div class="live-label">
+
+24H Change
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="live-status">
+
+🟢 <span>Live market data</span>
+
+&nbsp; • &nbsp;
+
+Updates automatically
+
+</div>
+
+
+<div class="market-link">
+
+<a
+href="https://www.geckoterminal.com/world-chain/pools/0x76555b0fc8f3e87d6dd23c11c4bf2219f9000746"
+class="button secondary"
+target="_blank">
+
+📈 View WAQF on GeckoTerminal
+
+</a>
+
+</div>
 
 
 </div>
@@ -1200,7 +1304,9 @@ rel="noopener">
 <div class="section-title">
 
 <h2>
+
 🌐 WAQF Ecosystem
+
 </h2>
 
 <p>
@@ -1227,7 +1333,9 @@ alt="WAQF Coin">
 
 
 <h3>
+
 🪙 WAQF Token
+
 </h3>
 
 
@@ -1248,16 +1356,6 @@ Explore WAQF
 
 </a>
 
-
-<a
-href="#tokenomics"
-class="button gold"
-style="margin-top:10px;">
-
-📊 View Tokenomics
-
-</a>
-
 </div>
 
 
@@ -1267,12 +1365,16 @@ style="margin-top:10px;">
 <div class="card">
 
 <div class="card-icon">
+
 🔒
+
 </div>
 
 
 <h3>
+
 WAQF Staking
+
 </h3>
 
 
@@ -1303,12 +1405,16 @@ class="button">
 <div class="card">
 
 <div class="card-icon">
+
 🛍️
+
 </div>
 
 
 <h3>
+
 WAQF Marketplace
+
 </h3>
 
 
@@ -1324,8 +1430,7 @@ marketplace.
 <a
 href="https://waqf.onpay.my"
 class="button"
-target="_blank"
-rel="noopener">
+target="_blank">
 
 Open Marketplace
 
@@ -1340,12 +1445,16 @@ Open Marketplace
 <div class="card">
 
 <div class="card-icon">
+
 📢
+
 </div>
 
 
 <h3>
+
 Community
+
 </h3>
 
 
@@ -1385,13 +1494,13 @@ Join WAQF
 
 <div class="container">
 
-
 <div class="section-title">
 
 <h2>
-🔒 WAQF Staking
-</h2>
 
+🔒 WAQF Staking
+
+</h2>
 
 <p>
 
@@ -1401,7 +1510,6 @@ in the WAQF ecosystem.
 </p>
 
 </div>
-
 
 
 <div class="staking-box">
@@ -1417,11 +1525,13 @@ alt="WAQF Coin">
 </div>
 
 
-
 <div class="staking-content">
 
+
 <h2>
+
 🚀 Start Staking WAQF
+
 </h2>
 
 
@@ -1444,18 +1554,17 @@ the available staking pool.
 
 <div class="hero-buttons">
 
+
 <a
 href="https://world.org/ecosystem/app_4593f73390a9843503ec096086b43612"
 class="button gold"
-target="_blank"
-rel="noopener">
+target="_blank">
 
 🚀 Open WAQF Staking
 
 </a>
 
 </div>
-
 
 
 <h3 style="color:#35e879;">
@@ -1465,18 +1574,21 @@ Current WAQF Staking Options
 </h3>
 
 
-
 <div class="pool-grid">
 
 
 <div class="pool">
 
 <strong>
+
 60.76%
+
 </strong>
 
 <span>
+
 60 Days Pool
+
 </span>
 
 </div>
@@ -1485,11 +1597,15 @@ Current WAQF Staking Options
 <div class="pool">
 
 <strong>
+
 83.91%
+
 </strong>
 
 <span>
+
 Flexible Pool
+
 </span>
 
 </div>
@@ -1498,11 +1614,15 @@ Flexible Pool
 <div class="pool">
 
 <strong>
+
 0.96%
+
 </strong>
 
 <span>
+
 Flexible Pool
+
 </span>
 
 </div>
@@ -1528,36 +1648,21 @@ Flexible Pool
 
 <div class="container">
 
-
 <div class="section-title">
 
 <h2>
 
-<img
-src="waqf-logo.png.PNG"
-style="
-width:42px;
-height:42px;
-object-fit:contain;
-vertical-align:middle;
-margin-right:8px;
-filter:drop-shadow(0 0 8px rgba(255,193,7,0.35));
-"
-alt="WAQF Coin">
-
-WAQF Token
+🪙 WAQF Token
 
 </h2>
 
-
 <p>
 
-Official WAQF digital asset information.
+Information about the WAQF digital asset.
 
 </p>
 
 </div>
-
 
 
 <div class="token-box">
@@ -1583,416 +1688,45 @@ WAQF Ecosystem Token
 </div>
 
 
-<div style="
-margin-top:15px;
-color:#35e879;
-font-size:13px;
-font-weight:bold;
-letter-spacing:1px;
-">
-
-WORLD CHAIN
-
-</div>
-
-
-
-<p style="
-max-width:700px;
-margin:25px auto;
-">
-
-WAQF is a community-driven digital token
-designed to support participation within
-the WAQF ecosystem including staking,
-community activities and marketplace
-initiatives.
-
-</p>
-
-
-
-<!-- CONTRACT INFORMATION -->
-
-<div class="contract-box">
-
-
-<div class="contract-row">
-
-<div class="contract-label">
-Token
-</div>
-
-<div class="contract-value">
-WAQF
-</div>
-
-</div>
-
-
-
-<div class="contract-row">
-
-<div class="contract-label">
-Network
-</div>
-
-<div class="contract-value"
-style="color:#35e879;">
-
-World Chain
-
-</div>
-
-</div>
-
-
-
-<div class="contract-row">
-
-<div class="contract-label">
-Chain ID
-</div>
-
-<div class="contract-value">
-
-480
-
-</div>
-
-</div>
-
-
-
-<div>
-
-<div class="contract-label"
-style="margin-top:15px;">
-
-Contract Address
-
-</div>
-
-
-<div class="contract-address">
-
-0x0983E2b886A0ae277243f099d62B7688733646aF
-
-</div>
-
-</div>
-
-
-
-<div class="contract-actions">
-
-
-<a
-href="https://worldscan.org/address/0x0983E2b886A0ae277243f099d62B7688733646aF"
-class="button gold"
-target="_blank"
-rel="noopener">
-
-🔎 View Contract
-
-</a>
-
-
-<button
-type="button"
-class="button copy"
-onclick="copyContract()">
-
-📋 Copy Contract
-
-</button>
-
-
-</div>
-
-
-<div
-id="copyMessage"
-class="copy-message">
-</div>
-
-
-</div>
-
-
-<p style="
-color:#7f8c84;
-font-size:12px;
-margin-top:20px;
-">
-
-Always verify the contract address
-before interacting with WAQF.
-
-</p>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =========================
-     TOKENOMICS
-========================= -->
-
-<section id="tokenomics">
-
-<div class="container">
-
-
-<div class="section-title">
-
-<h2>
-📊 WAQF Tokenomics
-</h2>
+<br>
 
 
 <p>
 
-Understanding the WAQF token ecosystem.
+WAQF is designed to support
+participation within the WAQF ecosystem
+including staking, community activities
+and marketplace initiatives.
 
 </p>
 
-</div>
 
+<p style="color:#7f8c84;font-size:13px;">
 
+Token contract:
 
-<div class="tokenomics-box">
+<br>
 
+<strong style="color:#35e879;">
 
-<!-- SUPPLY -->
+0x0983E2b886A0ae277243f099d62B7688733646aF
 
-<div class="tokenomics-card">
+</strong>
 
-<div class="tokenomics-icon">
-🪙
-</div>
-
-
-<h3>
-Total Supply
-</h3>
-
-
-<div class="tokenomics-value">
-On-Chain
-</div>
-
-
-<div class="tokenomics-description">
-
-Official supply information can be
-verified directly on the blockchain.
-
-</div>
-
-</div>
-
-
-
-<!-- NETWORK -->
-
-<div class="tokenomics-card">
-
-<div class="tokenomics-icon">
-🌐
-</div>
-
-
-<h3>
-Network
-</h3>
-
-
-<div class="tokenomics-value">
-World Chain
-</div>
-
-
-<div class="tokenomics-description">
-
-WAQF is deployed on the
-World Chain network.
-
-</div>
-
-</div>
-
-
-
-<!-- CHAIN ID -->
-
-<div class="tokenomics-card">
-
-<div class="tokenomics-icon">
-🔗
-</div>
-
-
-<h3>
-Chain ID
-</h3>
-
-
-<div class="tokenomics-value">
-480
-</div>
-
-
-<div class="tokenomics-description">
-
-World Chain Mainnet
-network identifier.
-
-</div>
-
-</div>
-
-
-
-<!-- STAKING -->
-
-<div class="tokenomics-card">
-
-<div class="tokenomics-icon">
-🔒
-</div>
-
-
-<h3>
-Staking
-</h3>
-
-
-<div class="tokenomics-value">
-Available
-</div>
-
-
-<div class="tokenomics-description">
-
-WAQF staking opportunities
-are available through the
-WAQF staking platform.
-
-</div>
-
-</div>
-
-
-
-<!-- UTILITY -->
-
-<div class="tokenomics-card">
-
-<div class="tokenomics-icon">
-🌱
-</div>
-
-
-<h3>
-Ecosystem Utility
-</h3>
-
-
-<div class="tokenomics-value">
-WAQF
-</div>
-
-
-<div class="tokenomics-description">
-
-Designed to support staking,
-community activities and
-marketplace initiatives.
-
-</div>
-
-</div>
-
-
-
-<!-- MARKETPLACE -->
-
-<div class="tokenomics-card">
-
-<div class="tokenomics-icon">
-🛍️
-</div>
-
-
-<h3>
-Marketplace
-</h3>
-
-
-<div class="tokenomics-value">
-Active
-</div>
-
-
-<div class="tokenomics-description">
-
-Products and services are
-available through the
-WAQF marketplace.
-
-</div>
-
-</div>
-
-
-</div>
-
-
-
-<div class="tokenomics-note">
-
-⚠️ Total supply, liquidity and allocation
-figures will only be published after
-on-chain verification.
-
-<br><br>
-
-Always verify the official WAQF contract
-before interacting with the token.
-
-</div>
-
-
-
-<div class="hero-buttons">
-
-<a
-href="#token"
-class="button gold">
-
-🔗 View Contract
-
-</a>
+</p>
 
 
 <a
-href="https://worldscan.org/address/0x0983E2b886A0ae277243f099d62B7688733646aF"
+href="https://worldscan.org/token/0x0983E2b886A0ae277243f099d62B7688733646aF"
 class="button secondary"
-target="_blank"
-rel="noopener">
+target="_blank">
 
-🔎 WorldScan
+🔎 View WAQF Contract
 
 </a>
 
-</div>
 
+</div>
 
 </div>
 
@@ -2008,13 +1742,13 @@ rel="noopener">
 
 <div class="container">
 
-
 <div class="section-title">
 
 <h2>
-🗺️ WAQF Roadmap
-</h2>
 
+🗺️ WAQF Roadmap
+
+</h2>
 
 <p>
 
@@ -2025,16 +1759,16 @@ Building the WAQF ecosystem step by step.
 </div>
 
 
-
 <div class="roadmap">
 
 
 <div class="phase">
 
 <span>
-PHASE 1 — FOUNDATION
-</span>
 
+PHASE 1 — FOUNDATION
+
+</span>
 
 <ul>
 
@@ -2051,13 +1785,13 @@ PHASE 1 — FOUNDATION
 </div>
 
 
-
 <div class="phase">
 
 <span>
-PHASE 2 — GROWTH
-</span>
 
+PHASE 2 — GROWTH
+
+</span>
 
 <ul>
 
@@ -2074,13 +1808,13 @@ PHASE 2 — GROWTH
 </div>
 
 
-
 <div class="phase">
 
 <span>
-PHASE 3 — ECOSYSTEM
-</span>
 
+PHASE 3 — ECOSYSTEM
+
+</span>
 
 <ul>
 
@@ -2113,12 +1847,12 @@ PHASE 3 — ECOSYSTEM
 
 <div class="container">
 
-
 <div class="cta">
 
-
 <h2>
+
 📢 Join the WAQF Community
+
 </h2>
 
 
@@ -2137,7 +1871,6 @@ Community links will be added here.
 
 </p>
 
-
 </div>
 
 </div>
@@ -2154,12 +1887,12 @@ Community links will be added here.
 
 <div class="container">
 
-
 <div class="cta">
 
-
 <h2>
+
 🚀 Start Your WAQF Journey
+
 </h2>
 
 
@@ -2170,7 +1903,6 @@ visit the marketplace or
 start staking WAQF.
 
 </p>
-
 
 
 <div class="hero-buttons">
@@ -2188,8 +1920,7 @@ class="button gold">
 <a
 href="https://waqf.onpay.my"
 class="button secondary"
-target="_blank"
-rel="noopener">
+target="_blank">
 
 🛍️ Visit Marketplace
 
@@ -2220,12 +1951,13 @@ alt="WAQF Coin">
 
 
 <strong style="color:white;">
+
 WAQF
+
 </strong>
 
 
 <br>
-
 
 © 2026 WAQF. All rights reserved.
 
@@ -2236,8 +1968,6 @@ WAQF
 <span style="font-size:12px;">
 
 WAQF Web3 Ecosystem
-<br>
-World Chain • Chain ID 480
 
 </span>
 
@@ -2247,91 +1977,459 @@ World Chain • Chain ID 480
 
 
 <!-- =========================
-     JAVASCRIPT
+     WAQF LIVE MARKET SCRIPT
 ========================= -->
 
 <script>
 
-function copyContract() {
 
-    const contract =
-        "0x0983E2b886A0ae277243f099d62B7688733646aF";
+/*
+========================================
+WAQF TOKEN
+========================================
+*/
 
-    const message =
-        document.getElementById(
-            "copyMessage"
-        );
+const WAQF_CONTRACT =
+"0x0983E2b886A0ae277243f099d62B7688733646aF";
+
+
+/*
+========================================
+WAQF / WLD LIQUIDITY POOL
+========================================
+*/
+
+const WAQF_POOL =
+"0x76555b0fc8f3e87d6dd23c11c4bf2219f9000746";
+
+
+/*
+========================================
+GECKOTERMINAL API
+========================================
+*/
+
+const API_URL =
+`https://api.geckoterminal.com/api/v2/networks/world-chain/pools/${WAQF_POOL}`;
+
+
+
+/*
+========================================
+FORMAT USD
+========================================
+*/
+
+function formatUSD(value) {
+
+    if (
+        value === null ||
+        value === undefined ||
+        isNaN(value)
+    ) {
+
+        return "—";
+
+    }
+
+
+    const number =
+        Number(value);
 
 
     if (
-        navigator.clipboard &&
-        window.isSecureContext
+        number === 0
     ) {
 
-        navigator.clipboard
-            .writeText(contract)
-            .then(function() {
-
-                message.innerHTML =
-                    "✓ Contract address copied!";
-
-            })
-            .catch(function() {
-
-                fallbackCopy(contract);
-
-            });
-
-    } else {
-
-        fallbackCopy(contract);
+        return "$0";
 
     }
+
+
+    if (
+        number < 0.000001
+    ) {
+
+        return "$" +
+            number.toExponential(4);
+
+    }
+
+
+    if (
+        number < 0.01
+    ) {
+
+        return "$" +
+            number.toFixed(8);
+
+    }
+
+
+    if (
+        number < 1
+    ) {
+
+        return "$" +
+            number.toFixed(6);
+
+    }
+
+
+    return "$" +
+        number.toLocaleString(
+            "en-US",
+            {
+                maximumFractionDigits: 2
+            }
+        );
 
 }
 
 
-function fallbackCopy(text) {
 
-    const textarea =
-        document.createElement("textarea");
+/*
+========================================
+FORMAT NUMBER
+========================================
+*/
 
-    textarea.value = text;
+function formatNumber(value) {
 
-    textarea.style.position =
-        "fixed";
+    if (
+        value === null ||
+        value === undefined ||
+        isNaN(value)
+    ) {
 
-    textarea.style.opacity = "0";
+        return "—";
 
-    document.body.appendChild(textarea);
+    }
 
-    textarea.focus();
 
-    textarea.select();
+    return Number(value)
+        .toLocaleString(
+            "en-US",
+            {
+                maximumFractionDigits: 0
+            }
+        );
+
+}
+
+
+
+/*
+========================================
+LOAD WAQF MARKET DATA
+========================================
+*/
+
+async function loadWAQFMarket() {
+
 
     try {
 
-        document.execCommand("copy");
+
+        const response =
+            await fetch(
+                API_URL,
+                {
+                    headers: {
+                        "Accept":
+                            "application/json"
+                    }
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "GeckoTerminal API request failed"
+            );
+
+        }
+
+
+        const result =
+            await response.json();
+
+
+        const data =
+            result.data;
+
+
+        if (!data ||
+            !data.attributes) {
+
+            throw new Error(
+                "Invalid market data"
+            );
+
+        }
+
+
+        const attr =
+            data.attributes;
+
+
+
+        /*
+        ========================================
+        PRICE
+        ========================================
+        */
+
+        const price =
+            attr.base_token_price_usd;
+
 
         document.getElementById(
-            "copyMessage"
-        ).innerHTML =
-            "✓ Contract address copied!";
+            "waqf-price"
+        ).textContent =
+            formatUSD(price);
+
+
+
+        /*
+        ========================================
+        MARKET CAP / FDV
+        ========================================
+        */
+
+        const marketCap =
+            attr.market_cap_usd ??
+            attr.fdv_usd;
+
+
+        document.getElementById(
+            "waqf-mcap"
+        ).textContent =
+            formatUSD(
+                marketCap
+            );
+
+
+
+        /*
+        ========================================
+        LIQUIDITY
+        ========================================
+        */
+
+        const liquidity =
+            attr.reserve_in_usd;
+
+
+        document.getElementById(
+            "waqf-liquidity"
+        ).textContent =
+            formatUSD(
+                liquidity
+            );
+
+
+
+        /*
+        ========================================
+        24H VOLUME
+        ========================================
+        */
+
+        const volume =
+            attr.volume_usd?.h24;
+
+
+        document.getElementById(
+            "waqf-volume"
+        ).textContent =
+            formatUSD(
+                volume
+            );
+
+
+
+        /*
+        ========================================
+        24H TRANSACTIONS
+        ========================================
+        */
+
+        const txns =
+            attr.transactions?.h24;
+
+
+        let transactionCount =
+            null;
+
+
+        if (txns) {
+
+            transactionCount =
+                Number(
+                    txns.buys || 0
+                ) +
+                Number(
+                    txns.sells || 0
+                );
+
+        }
+
+
+        document.getElementById(
+            "waqf-txns"
+        ).textContent =
+            formatNumber(
+                transactionCount
+            );
+
+
+
+        /*
+        ========================================
+        24H PRICE CHANGE
+        ========================================
+        */
+
+        const change =
+            attr.price_change_percentage?.h24;
+
+
+        const changeElement =
+            document.getElementById(
+                "waqf-change"
+            );
+
+
+        if (
+            change !== null &&
+            change !== undefined &&
+            !isNaN(change)
+        ) {
+
+
+            const numericChange =
+                Number(change);
+
+
+            const sign =
+                numericChange >= 0
+                    ? "+"
+                    : "";
+
+
+            changeElement.textContent =
+                sign +
+                numericChange.toFixed(2) +
+                "%";
+
+
+        } else {
+
+
+            changeElement.textContent =
+                "—";
+
+        }
+
+
+
+        /*
+        ========================================
+        CONSOLE
+        ========================================
+        */
+
+        console.log(
+            "WAQF market data updated:",
+            new Date().toLocaleString()
+        );
+
 
     }
 
-    catch (err) {
+
+    catch (error) {
+
+
+        console.error(
+            "WAQF market data error:",
+            error
+        );
+
+
+        /*
+        ----------------------------------------
+        FALLBACK
+        ----------------------------------------
+        */
 
         document.getElementById(
-            "copyMessage"
-        ).innerHTML =
-            "Please copy the address manually.";
+            "waqf-price"
+        ).textContent =
+            "—";
+
+
+        document.getElementById(
+            "waqf-mcap"
+        ).textContent =
+            "—";
+
+
+        document.getElementById(
+            "waqf-liquidity"
+        ).textContent =
+            "—";
+
+
+        document.getElementById(
+            "waqf-volume"
+        ).textContent =
+            "—";
+
+
+        document.getElementById(
+            "waqf-txns"
+        ).textContent =
+            "—";
+
+
+        document.getElementById(
+            "waqf-change"
+        ).textContent =
+            "—";
 
     }
-
-    document.body.removeChild(textarea);
 
 }
+
+
+
+/*
+========================================
+INITIAL LOAD
+========================================
+*/
+
+loadWAQFMarket();
+
+
+
+/*
+========================================
+AUTO REFRESH
+========================================
+
+GeckoTerminal API data is normally
+cached/updated approximately every minute.
+========================================
+*/
+
+setInterval(
+    loadWAQFMarket,
+    60000
+);
 
 </script>
 
