@@ -120,6 +120,8 @@ header {
     color: #041008;
     font-weight: bold;
     transition: 0.2s;
+    text-align: center;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -179,6 +181,103 @@ section {
 .card-icon {
     font-size: 30px;
     margin-bottom: 8px;
+}
+
+/* STAKING */
+
+.staking-card {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 22px;
+    background: linear-gradient(
+        135deg,
+        #0d2416,
+        #0a1710
+    );
+    border: 1px solid rgba(32,214,107,0.28);
+}
+
+.staking-card h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.staking-intro {
+    color: #aab5ad;
+    margin-bottom: 25px;
+}
+
+.staking-steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin: 25px 0;
+}
+
+.staking-step {
+    padding: 18px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+}
+
+.staking-step strong {
+    display: block;
+    color: #35e879;
+    margin-bottom: 6px;
+}
+
+.staking-step span {
+    display: block;
+    color: #9daaa2;
+    font-size: 14px;
+}
+
+.pool-info {
+    margin: 25px 0;
+}
+
+.pool-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.pool-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.pool {
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 12px;
+    background: #09150e;
+    border: 1px solid rgba(32,214,107,0.18);
+}
+
+.pool strong {
+    display: block;
+    color: #35e879;
+    font-size: 18px;
+}
+
+.pool span {
+    color: #8e9a93;
+    font-size: 12px;
+}
+
+.staking-button {
+    width: 100%;
+    font-size: 17px;
+    padding: 17px;
+}
+
+.staking-note {
+    text-align: center;
+    color: #7f8c84;
+    font-size: 12px;
+    margin-top: 15px;
 }
 
 /* TOKEN */
@@ -275,12 +374,24 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .staking-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .pool-list {
+        grid-template-columns: 1fr;
+    }
+
     .button {
         width: 100%;
     }
 
     .hero-buttons {
         flex-direction: column;
+    }
+
+    .staking-card {
+        padding: 22px;
     }
 
 }
@@ -336,14 +447,16 @@ and real-world participation.
 <a
 href="https://world.org/ecosystem/app_4593f73390a9843503ec096086b43612"
 class="button"
-target="_blank">
+target="_blank"
+rel="noopener noreferrer">
 🚀 Stake WAQF
 </a>
 
 <a
 href="https://waqf.onpay.my"
 class="button secondary"
-target="_blank">
+target="_blank"
+rel="noopener noreferrer">
 🛍️ Marketplace
 </a>
 
@@ -374,6 +487,8 @@ Explore the different parts of the WAQF ecosystem.
 <div class="grid">
 
 
+<!-- TOKEN CARD -->
+
 <div class="card">
 
 <div class="card-icon">🪙</div>
@@ -392,6 +507,8 @@ Explore WAQF
 </div>
 
 
+<!-- STAKING CARD -->
+
 <div class="card">
 
 <div class="card-icon">🔒</div>
@@ -404,14 +521,15 @@ available staking opportunities and rewards.
 </p>
 
 <a
-href="https://world.org/ecosystem/app_4593f73390a9843503ec096086b43612"
-class="button"
-target="_blank">
-🚀 Stake WAQF Now
+href="#staking"
+class="button">
+🚀 Learn & Stake
 </a>
 
 </div>
 
+
+<!-- MARKETPLACE CARD -->
 
 <div class="card">
 
@@ -427,12 +545,15 @@ through the WAQF marketplace.
 <a
 href="https://waqf.onpay.my"
 class="button"
-target="_blank">
+target="_blank"
+rel="noopener noreferrer">
 Open Marketplace
 </a>
 
 </div>
 
+
+<!-- COMMUNITY CARD -->
 
 <div class="card">
 
@@ -451,6 +572,127 @@ Join WAQF
 
 </div>
 
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STAKING -->
+
+<section id="staking">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🔒 WAQF Staking</h2>
+
+<p>
+Stake WAQF tokens and participate in the WAQF ecosystem.
+</p>
+
+</div>
+
+
+<div class="staking-card">
+
+<h3>🚀 Start WAQF Staking</h3>
+
+<p class="staking-intro">
+Access the WAQF staking pools through Ani Wallet.
+Choose the available pool that suits your preference
+and confirm your staking amount.
+</p>
+
+
+<!-- STEPS -->
+
+<div class="staking-steps">
+
+<div class="staking-step">
+<strong>1️⃣ Open Ani Wallet</strong>
+<span>
+Tap the button below to access the WAQF staking platform.
+</span>
+</div>
+
+
+<div class="staking-step">
+<strong>2️⃣ Search WAQF</strong>
+<span>
+Search for WAQF in the Staking Pools section.
+</span>
+</div>
+
+
+<div class="staking-step">
+<strong>3️⃣ Choose a Pool</strong>
+<span>
+Review the available WAQF staking pools and APY.
+</span>
+</div>
+
+
+<div class="staking-step">
+<strong>4️⃣ Start Staking</strong>
+<span>
+Enter your WAQF amount and confirm your transaction.
+</span>
+</div>
+
+</div>
+
+
+<!-- POOL INFORMATION -->
+
+<div class="pool-info">
+
+<div class="pool-title">
+📊 Current WAQF Staking Options
+</div>
+
+<div class="pool-list">
+
+<div class="pool">
+<strong>60.76%</strong>
+<span>60 Days Pool</span>
+</div>
+
+
+<div class="pool">
+<strong>83.91%</strong>
+<span>Flexible Pool</span>
+</div>
+
+
+<div class="pool">
+<strong>0.96%</strong>
+<span>Flexible Pool</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- STAKING BUTTON -->
+
+<a
+href="https://world.org/ecosystem/app_4593f73390a9843503ec096086b43612"
+class="button staking-button"
+target="_blank"
+rel="noopener noreferrer">
+🚀 STAKE WAQF NOW
+</a>
+
+
+<p class="staking-note">
+⚠️ Staking is performed through Ani Wallet.
+Please review the pool details, APY and terms before staking.
+</p>
 
 </div>
 
@@ -621,14 +863,16 @@ visit the marketplace or start staking WAQF.
 <a
 href="https://world.org/ecosystem/app_4593f73390a9843503ec096086b43612"
 class="button"
-target="_blank">
+target="_blank"
+rel="noopener noreferrer">
 🔒 Stake WAQF
 </a>
 
 <a
 href="https://waqf.onpay.my"
 class="button secondary"
-target="_blank">
+target="_blank"
+rel="noopener noreferrer">
 🛍️ Visit Marketplace
 </a>
 
